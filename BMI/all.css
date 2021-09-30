@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+* {
+  margin        : 0;
+  padding       : 0;
+  border        : 0;
+  font-size     : 100%;
+  font          : inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing : 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.wrap {
+  max-width : 1024px;
+  margin    : 0 auto;
+  min-height: 100%;
+  position  : relative;
+}
+
+/*資料輸入區*/
+.form-section {
+  padding    : 74px 0 50px 0;
+  background : #424242;
+  display    : flex;
+  align-items: center;
+}
+
+.form-section_logo {
+  width          : 117px;
+  height         : 117px;
+  margin-left    : 173px;
+  background     : url("https://hexschool.github.io/JavaScript_HomeWork/assets/BMICLogo.png") no-repeat center center;
+  background-size: cover;
+  filter         : invert(90%) sepia(55%) saturate(437%) hue-rotate(365deg) brightness(101%) contrast(110%);
+}
+
+.form-section_logo img {
+  width           : 117px;
+  vertical-align  : middle;
+  color           : #ffd366;
+  border-radius   : 12px;
+  background-color: #ffd366;
+}
+
+.form-section_content {
+  margin-left : 97px;
+  margin-right: 53px;
+}
+
+.valid-feedback-height,
+.valid-feedback-weight {
+  display   : block;
+  color     : red;
+  text-align: right;
+}
+
+label {
+  display      : block;
+  font-size    : 18px;
+  color        : #ffd366;
+  margin-bottom: 7px;
+}
+
+.addHeight,
+.addWeight {
+  width         : 250px;
+  font-size     : 24px;
+  color         : rgba(255, 255, 255, 0.5);
+  padding-top   : 8px;
+  padding-bottom: 8px;
+  padding-left  : 16px;
+  margin-bottom : 7px;
+  background    : rgba(255, 255, 255, 0.18);
+  border        : 2px solid #ffd366;
+  border-radius : 10px;
+  outline       : none;
+}
+
+.form-section_btn {
+  display        : block;
+  text-align     : center;
+  border         : transparent;
+  background     : #ffd366;
+  border-radius  : 999em;
+  width          : 120px;
+  height         : 120px;
+  padding        : 48px 0px;
+  font-size      : 24px;
+  cursor         : pointer;
+  text-decoration: none;
+  color          : #424242;
+}
+
+.form-section_btn:hover {
+  box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+}
+
+.form-section_btn:focus {
+  background: #dea821;
+}
+
+.form-section_bmiText {
+  font-size: 14px;
+}
+
+.form-section_btn-show {
+  display        : none;
+  text-align     : center;
+  border         : 1px solid red;
+  background     : #424242;
+  border-radius  : 999em;
+  min-width      : 123px;
+  min-height     : 123px;
+  padding        : 33px 0px;
+  cursor         : pointer;
+  text-decoration: none;
+  margin-right   : 18px;
+  font-size      : 32px;
+  position       : relative;
+}
+
+.form-section_bodyType {
+  display  : none;
+  font-size: 32px;
+}
+
+.refresh {
+  position        : absolute;
+  background-color: white;
+  width           : 30px;
+  height          : 30px;
+  border          : 3px solid #424242;
+  border-radius   : 999em;
+  right           : -3px;
+  bottom          : 4px;
+}
+
+.refresh-img {
+  border-radius: 999em;
+  margin       : 1px 0px 3px 0.6px;
+}
+
+/*BMI記錄區*/
+.record-section {
+  display         : flex;
+  flex-direction  : column;
+  align-items     : center;
+  min-height      : -webkit-calc(100vh - 300px - 90px);
+  min-height      : calc(100vh - 300px - 90px);
+  padding-top     : 48px;
+  padding-bottom  : 90px;
+  background-color: lightgray;
+}
+
+.record-section_title {
+  font-size    : 24px;
+  color        : #424242;
+  text-align   : center;
+  margin-bottom: 36px;
+}
+
+.record-section_table {
+  margin: 0 auto;
+  color : #424242;
+}
+
+.record-section_item {
+  display         : flex;
+  align-items     : center;
+  background-color: #fff;
+  padding         : 21px 11px 21px 12px;
+  margin-bottom   : 16px;
+}
+
+.record-section_item td {
+  max-width   : 17.6%;
+  margin-right: 42px;
+}
+
+.record-section_item td:nth-child(3) {
+  width: 115px;
+}
+
+.record-section_item td:last-child {
+  max-width   : 8%;
+  margin-right: 0px;
+}
+
+.bmi,
+.weight,
+.height {
+  font-size     : 12px;
+  vertical-align: middle;
+}
+
+.bmiNum,
+.weightNum,
+.heightNum {
+  vertical-align: middle;
+  margin-left   : 7px;
+  font-size     : 20px;
+  font-weight   : bold;
+  color         : #4a4a4a;
+}
+
+.type {
+  width      : 110px;
+  text-align : left;
+  font-size  : 20px;
+  font-weight: bold;
+  color      : #4a4a4a;
+}
+
+.date {
+  margin-right: 20px;
+  font-size   : 12px;
+}
+
+.record-section_delete,
+.record-section_deleteAll {
+  text-decoration : none;
+  background-color: #424242;
+  color           : #ffd366;
+  border-radius   : 5px;
+  padding         : 6px 8px;
+}
+
+.record-section_delete:hover,
+.record-section_deleteAll:hover {
+  background-color: #ffd366;
+  color           : #424242;
+}
+
+.record-section_deleteAll {
+  margin-bottom: 16px;
+}
+
+footer {
+  background    : #ffd366;
+  text-align    : center;
+  padding-top   : 18px;
+  padding-bottom: 17px;
+  position      : absolute;
+  bottom        : 0;
+  width         : 100%;
+}
+
+.recordItemBorder {
+  border-left: 7px solid;
+}
+
+.border-green {
+  border-color: #86d73f;
+}
+
+.border-blue {
+  border-color: #31baf9;
+}
+
+.border-orangeLight {
+  border-color: #ff982d;
+}
+
+.border-orangeMedium {
+  border-color: #ff6c03;
+}
+
+.border-red {
+  border-color: #ff1200;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}

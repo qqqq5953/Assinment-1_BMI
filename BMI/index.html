@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/all.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <form class="form-section">
+      <div class="form-section_logo"></div>
+      <div class="form-section_content">
+        <label for="height">身高 cm</label>
+        <input type="tel" id="height" class="addHeight" placeholder="請輸入身高" maxlength="3">
+        <small class="valid-feedback-height">請輸入身高</small>
+        <label for="weight">體重 kg</label>
+        <input type="tel" id="weight" class="addWeight" placeholder="請輸入體重" maxlength="3">
+        <small class="valid-feedback-weight">請輸入體重</small>
+      </div>
+      <a href="#" class="form-section_btn">看結果</a>
+      <a href="#" class="form-section_btn-show">
+        <p class="form-section_bmi">20.09</p>
+        <p class="form-section_bmiText">BMI</p>
+        <div class="refresh">
+          <img class="refresh-img" src="https://hexschool.github.io/JavaScript_HomeWork/assets/icons_loop.png" alt="">
+        </div>
+      </a>
+      <div class="form-section_bodyType"></div>
+    </form>
+
+    <section class="record-section">
+      <h2 class="record-section_title">BMI紀錄</h2>
+      <table class="record-section_table">
+      </table>
+      <a href="#" class="record-section_deleteAll">刪除紀錄</a>
+    </section>
+
+    <footer>
+      <div>
+        <img src="https://hexschool.github.io/JavaScript_HomeWork/assets/BMICLogo.png" alt="">
+      </div>
+    </footer>
+  </div>
+
+  <script src="/all.js"></script>
+</body>
+
+</html>
